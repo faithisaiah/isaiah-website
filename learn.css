@@ -1,0 +1,139 @@
+*{box-sizing: border-box;}
+.SlideShow-Container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.SlideFade{
+    display: inline-block;
+}
+.Prev,.Next {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.Next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.Prev:hover,.Next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.active,.Prev:hover,.Next:hover{
+    background-color: rosybrown;
+}
+.text{
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -12px;
+    width: 100%;
+    text-align: center;
+}
+.NumberText{
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: gold;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,.dot:hover{
+    background-color: #717171;
+}
+.SlideFade{
+    animation: fadeEffect 4s;
+}
+@keyframes fade{
+    from{opacity: 4;}
+    to{opacity: 1;}
+}
+body{
+    background-color: bisque;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    margin-left: 40px;
+    overflow: visible;
+}
+h2{
+    color: firebrick;
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+}
+h4{
+    color: limegreen;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+}
+h5{
+    color: chocolate;
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 80px;
+}
+h6{
+    color: darkslateblue;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 65px;
+}
+p{
+    margin-left: 60px;
+    color: black;
+    font-size: 18px;
+}
+svg{
+    margin-left: 50px;
+}
+table{
+    margin-left: 50px;
+    font-size: 18px;
+}
+.cum{
+    margin-left: 50px;
+}
+.btn{
+    margin-left: 160px;
+    border-radius: 80px;
+    border: none;
+    background-color: bisque;
+    font-size: 15px;
+    font-style: italic;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.active,.btn:hover{
+    background-color: #717171;
+}
+dl{
+    font-size: 18px;
+}
+em{
+    font-size: 18px;
+    margin-left: 80px;
+}
